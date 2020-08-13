@@ -1,6 +1,6 @@
 FROM php:7.4-apache
 
-ARG VERSION=3.5.2
+ARG VERSION=3.5.1
 
 RUN apt-get update; \
     apt-get upgrade; \

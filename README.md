@@ -1,12 +1,12 @@
 
-# PHPServerMonitor in Docker (Last version 3.5.1)
+# PHPServerMonitor in Docker (Last version 3.5.2)
 
 **Notes:**
 
-* Last update : 04/08/2020, updated version to 3.5.1.
+* Last update : 04/08/2020, updated version to 3.5.2.
 * Forked from [Quentinvarquet](https://github.com/Quentinvarquet/docker-phpservermonitor).
 * Please open issues on [github](https://github.com/alwynpan/docker-phpservermonitor/issues).
-  
+
 ## PHPServerMonitor
 
 [PHPServerMonitor](http://www.phpservermonitor.org/) is a script that checks whether your websites and servers are up and running. It comes with a web based user interface where you can manage your services and websites, and you can manage users for each server with a mobile number and email address.
@@ -28,11 +28,11 @@ I will update the repository every time there is a new version of PHPServerMonit
 
 ## Build the image
 
-### Build the 3.5.1 version
+### Build the 3.5.2 version
 
 ```bash
 docker build --no-cache -t alwynpan/phpservermonitor:latest \
-                        -t alwynpan/phpservermonitor:3.5.1 \
+                        -t alwynpan/phpservermonitor:3.5.2 \
                         -f dockerfile/Dockerfile .
 ```
 
@@ -74,7 +74,7 @@ docker run --name phpservermonitor -p 80:80 \
 version: '3.8'
 services:
  psm:
-   image: alwynpan/phpservermonitor:3.5.1
+   image: alwynpan/phpservermonitor:3.5.2
    restart: always
    ports:
      - 80:80
