@@ -4,7 +4,7 @@ ARG VERSION=3.5.2
 
 RUN apt-get update; \
     apt-get upgrade; \
-    apt-get -qy install cron curl git wget; \
+    apt-get -qy install cron curl git wget inetutils-ping; \
 	docker-php-ext-install pdo pdo_mysql sockets; \
 	apt-get clean && rm -rf /var/lib/apt/lists/*
 
